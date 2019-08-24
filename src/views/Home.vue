@@ -14,7 +14,7 @@
     </div>
     <div class="wrapper">
       <p v-if="loading">Loading...</p>
-      <ul v-else class="image-card">
+      <ul v-else class="date-card">
         <!-- <DateCard class="date" v-for="(date, index) in dates" :key="index"/> -->
         <li v-for="date in dates" :key="date.index">{{date}}</li>
       </ul>
@@ -69,7 +69,7 @@ export default {
       //     });
       // });
     },
-    
+
     // fetchDate(element) {
     //   axios
     //     .get(`http://numbersapi.com/${element}/date`, {
@@ -119,7 +119,7 @@ export default {
     margin: 0 1.5rem;
   }
 }
-.image-card {
+.date-card {
   list-style: none;
   margin: 0.5rem 0;
   padding: 0;
